@@ -6,49 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <Button
+        android:id="@+id/btn_FindId"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="188dp"
+        android:background="@color/white"
+        android:stateListAnimator="@null"
+        android:text="아이디 찾기"
+        android:textColor="@color/black"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_FindPw"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_FindPw"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="188dp"
+        android:background="@color/white"
+        android:stateListAnimator="@null"
+        android:text="비밀번호 찾기"
+        android:textColor="@color/black"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="288dp"
+        android:layout_height="252dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/et_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
+
     <EditText
         android:id="@+id/et_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
         android:layout_marginTop="364dp"
         android:ems="10"
         android:hint="아이디"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/et_PW"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/et_PW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="444dp"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="428dp"
         android:ems="10"
-        android:hint="아이디"
-        android:inputType="text"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_Login"
-        android:layout_width="233dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
         android:text="로그인"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Regist"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_Regist"
-        android:layout_width="233dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="84dp"
-        android:text="로그인"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
