@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090966401078",
+    "project_id": "bhlibrary-a058a",
+    "storage_bucket": "bhlibrary-a058a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090966401078:android:d7a70c9e7a00f1bef1a897",
+        "android_client_info": {
+          "package_name": "com.example.bhlibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsD04yU5trnGk59hEdHsCAAmsxUM8rITI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
