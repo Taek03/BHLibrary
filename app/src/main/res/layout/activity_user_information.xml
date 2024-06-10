@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_information">
+
+    <!-- 상단바 -->
+    <TextView
+        android:id="@+id/TV_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#31638D"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="회원정보"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 뒤로가기 버튼 -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back0" />
+
+    <!-- 사용자 사진 -->
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TV_information"
+        android:src="@drawable/user_photo" /> <!-- 기본 사진 -->
+
+    <!-- 사용자 이름 -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자 이름"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 사용자 아이디 -->
+    <TextView
+        android:id="@+id/et_ID"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="사용자 아이디"
+        android:inputType="text"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 사용자 비밀번호 -->
+    <TextView
+        android:id="@+id/et_PW"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="사용자 비밀번호"
+        android:inputType="textPassword"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/et_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 사용자 생년월일 -->
+    <TextView
+        android:id="@+id/et_Birth"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="사용자 생년월일"
+        android:inputType="date"
+        android:enabled="false"
+        android:maxLength="8"
+        app:layout_constraintTop_toBottomOf="@id/et_PW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 사용자 전화번호 -->
+    <TextView
+        android:id="@+id/et_Phone"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="사용자 전화번호"
+        android:inputType="phone"
+        android:enabled="false"
+        android:maxLength="11"
+        app:layout_constraintTop_toBottomOf="@id/et_Birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 정보 수정 버튼 -->
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="정보 수정"
+        android:backgroundTint="#D5D5D5"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/et_Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

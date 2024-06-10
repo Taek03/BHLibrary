@@ -36,6 +36,8 @@ public class LoginActivity extends AppCompatActivity {
         mEtpwd = findViewById(R.id.et_PW);
         mBtnRegister = findViewById(R.id.btn_Regist);
         mBtnLogin = findViewById(R.id.btn_Login);
+        btn_FindId= findViewById(R.id.btn_FindId);
+        btn_FindPw=findViewById(R.id.btn_FindPw);
 
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,11 +59,25 @@ public class LoginActivity extends AppCompatActivity {
                 });
             }
         });
+        btn_FindId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(LoginActivity.this, FindIDActivity.class);
+                startActivity(intent1);
+            }
+        });
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, terms.class);
                 startActivity(intent);
+            }
+        });
+        btn_FindPw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(LoginActivity.this, FindPWActivity.class);
+                startActivity(intent2);
             }
         });
     }
